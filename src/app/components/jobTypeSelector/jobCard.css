@@ -1,0 +1,140 @@
+.Nav_of_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    width: 100%;
+  }
+  
+  .Nav_of_content_link {
+    font-size: 18px;
+    color: black;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    margin-left: 2%;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .Nav_of_content_link:focus,
+  .Nav_of_content_link:hover {
+    color: #6bc4df;
+  }
+  
+  .Nav_of_content_link:focus:after,
+  .Nav_of_content_link:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .Nav_of_content_link:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #6bc4df;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+  
+  
+.jobCard {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  margin: 2rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+}
+
+.jobCard:hover {
+  transform: translate(5px, 5px);
+}
+
+.jobDetails {
+  flex: 1;
+}
+
+.jobDetails h1{
+  padding: 1rem;
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.jobDetails p{
+  font-size: 16px;
+  color: #777;
+  font-weight: 400;
+  margin-bottom: 1%;
+}
+
+.jobTags{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.jobTags p{
+  margin: 1rem;
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  padding: 0.4rem;
+}
+
+.jobDetails span{
+  margin: 1rem;
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #6bc4df;
+}
+
+.jobTitle {
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.jobDescription {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+.applyButton {
+  background-color: #6bc4df;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.applyButton:hover {
+  background-color: #4a90a8;
+} 

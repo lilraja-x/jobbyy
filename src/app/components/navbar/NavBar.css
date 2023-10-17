@@ -1,0 +1,60 @@
+.header-bg {
+    background-color: #eef2fa;
+  }
+  .header {
+    padding: 1rem;
+    background-color: #b1dae7;
+  }
+
+  ul {
+    margin-right: 50px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    items: center;
+  }
+
+  .logo-first {
+    color: #333;
+    font-size: 2.5rem;
+    font-family: math;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .logo-second {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    animation: blink 1.5s infinite;
+    -webkit-animation: blink 1.5s infinite;
+}
+
+  .logo-third{
+    color: #333;
+    font-size: 2.5rem;
+    font-family: math;
+  }
+
+  .nav-link {
+    margin-left: 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+    .nav-link:hover {
+        color: #000;
+    }
+
+
