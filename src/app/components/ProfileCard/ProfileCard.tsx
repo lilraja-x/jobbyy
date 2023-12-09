@@ -1,13 +1,18 @@
 import React from 'react';
 import './ProfileCard.css';
 
-export default function ProfileCard(props) {
+interface ProfileCardProps {
+    name: string;
+    position: string;
+}
+
+export default function ProfileCard({ name, position }: ProfileCardProps) {
     return (
         <div className="profile-card">
             <div className="card-info">
                 <img className="card-avatar" src="/d_a_c.jpg" alt="profile_image" />
-                <div className="card-title">{props.name}</div>
-                <div className="card-subtitle">{props.position}</div>
+                <div className="card-title">{name}</div>
+                <div className="card-subtitle">{position}</div>
             </div>
                 <ul className="card-social">
                 <li className="card-social__item">
